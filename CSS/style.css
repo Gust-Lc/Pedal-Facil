@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+  --green: #16a34a;
+  --green-dark: #15803d;
+  --green-light: #dcfce7;
+  --green-pale: #f0fdf4;
+  --slate-900: #0f172a;
+  --slate-700: #334155;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --white: #ffffff;
+  --bg: #f8fafc;
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+}
+
+.logos h4{
+    margin-left: 5px;
+    margin-top: 3px;
+    color: var(--green);
+}
+
+.cabecaralho{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 20PX;
+}
+
+main {
+    position: relative; 
+    min-height: 400px;     
+}
+
+main img {
+    border-radius: 15px;  
+    position: fixed;     
+    bottom: 10px;             
+    right: 20px;              
+}
+
+.textinho{
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+.textinho h2{
+    font-size: 6rem;
+    font-family: var(--font-body);
+}
+
+.verde {
+    color: var(--green);
+}
