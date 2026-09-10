@@ -70,5 +70,23 @@ main img {
 }
 
 .locacao{
+    position: relative;
     color: var(--green-dark);
+    bottom: 20px;
+    font-size: 0.8rem;
+    font: var(--font-display);
+}
+
+.btn-baixo{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-baixao{
+    background-color: var(--green);
+    border-radius: 15px;
+    height: 30px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
 }
