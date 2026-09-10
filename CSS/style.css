@@ -68,3 +68,7 @@ main img {
 .verde {
     color: var(--green);
 }
+
+.locacao{
+    color: var(--green-dark);
+}
