@@ -43,6 +43,16 @@
     gap: 20PX;
 }
 
+.btn-alugar{
+    background-color: var(--green);
+    border-radius: 30px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    color: var(--slate-200);
+    border: none;
+}
+
 main {
     position: relative; 
     min-height: 400px;     
@@ -77,16 +87,31 @@ main img {
     font: var(--font-display);
 }
 
+.textoae{
+    position: relative;
+    color: var(--slate-500);
+    bottom: 20px;
+    font-size: 0.8rem;
+    font: var(--font-display);
+}
+
 .btn-baixo{
     display: flex;
     flex-direction: row;
+    margin-top: 25px;
 }
 
 .btn-baixao{
     background-color: var(--green);
-    border-radius: 15px;
-    height: 30px;
-    width: 160px;
+    border-radius: 30px;
+    height: 60px;
+    width: 200px;
     text-align: center;
-    text-decoration: none;
+    color: var(--slate-200);
+    border: none;
+}
+
+.btn-baixo a{
+    margin-top: 20px;
+    margin-left: 20px;
 }
