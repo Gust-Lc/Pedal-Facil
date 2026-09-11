@@ -40,7 +40,7 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
-    gap: 20PX;
+    gap: 20px;
 }
 
 .btn-alugar{
@@ -72,7 +72,7 @@ main img {
 
 .textinho h2{
     font-size: 6rem;
-    font-family: var(--font-body);
+    font-family: var(--font-display);
 }
 
 .verde {
@@ -84,7 +84,7 @@ main img {
     color: var(--green-dark);
     bottom: 20px;
     font-size: 0.8rem;
-    font: var(--font-display);
+    font-family: var(--font-display);
 }
 
 .textoae{
@@ -92,7 +92,7 @@ main img {
     color: var(--slate-500);
     bottom: 20px;
     font-size: 0.8rem;
-    font: var(--font-display);
+    font-family: var(--font-display);
 }
 
 .btn-baixo{
