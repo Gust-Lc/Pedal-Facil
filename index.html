@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css">
+    <title>PedalFácil - Locação de Bicicletas</title>
+</head>
+<body>
+    <header class="cabecaralho">
+        <div class="logo">
+            <div class="logo-icone">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/>
+            <path d="M5.5 17.5l3-8 4 3 2.5-5H19l-3.5 3.5"/>
+          </svg>
+            </div>
+
+            <h1>Pedal <span>Fácil</span></h1>
+
+        </div>
+        <nav>
+            <a href="#bikes">Bikes</a>
+            <a href="#como_funciona">Como funciona</a>
+            <div class="btn-alugar">
+                <a href="reserva.html">Alugar</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="textinho">
+        <div class="textinho-texto">
+            <p class="locacao">LOCAÇÃO DE BICICLETAS</p>
+            <h1>Pedale com <span class="verde">liberdade</span>, sem complicação</h1>
+            <p class="textoae">Alugue a bike ideal para sua aventura ou para o dia a dia. Frota variada, preços acessíveis e processo 100% online.</p>
+
+            <nav class="btn-baixo">
+                <a class="btn-baixao" href="#bikes">Ver bikes disponíveis</a>
+                <a class="como" href="#como_funciona">Como funciona?</a>
+            </nav>
+
+            <div class="estatisticas">
+
+                <div>
+                    <strong>50+</strong>
+                    <span>BIKES</span>
+                </div>
+
+                <div>
+                    <strong>4.9★</strong>
+                    <span>AVALIAÇÃO</span>
+                </div>
+
+                <div>
+                    <strong>3k+</strong>
+                    <span>CLIENTES</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="textinho-imagem" id="imagem_bike">
+
+                <img src="src/photo-1629056528325-f328b5f27ae7.jpg" alt="Ciclistas subindo uma montanha muito foda mlk slk pika dmaiseeeeeee.">
+
+                <div class="reservas">
+                    <p>Reservas abertas</p>
+
+                    <div class="reservas_info">
+
+                        <div class="check">
+
+                            <i class="teste check"></i>
+
+                        </div>
+
+                        <strong>
+                            Bikes disponíveis hoje
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+        <section
+            class="como-funciona"
+            id="como_funciona"
+        >
+            <h2>
+                Como funciona
+            </h2>
+
+
+            <div class="passos">
+
+                <div class="passo">
+
+                    <h3>
+                        Escolha sua bike
+                    </h3>
+
+                    <p>
+                        Navegue pelo catálogo e selecione o modelo ideal para você.
+                    </p>
+
+                </div>
+
+                <div class="passo">
+
+                    <h3>
+                        Preencha o cadastro
+                    </h3>
+
+                    <p>
+                        Informe seus dados, período de uso e horário de retirada.
+                    </p>
+
+                </div>
+
+                <div class="passo">
+
+                    <h3>
+                        Retire e pedale!
+                    </h3>
+
+                    <p>
+                        Venha buscar no nosso endereço e aproveite ao máximo.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="catalogo" id="bikes">
+
+            <div class="catalogo-topo">
+
+                <div>
+
+                    <span class="tag">
+                        CATÁLOGO
+                    </span>
+
+                    <h2>
+                        Bikes disponíveis
+                    </h2>
+
+                </div>
+
+                <span class="modelos-texto">
+                    3 modelos disponíveis agora
+                </span>
+
+            </div>
+
+            <div class="lista-bikes">
+
+                <article class="bike-card">
+
+                    <div class="imagem-bike">
+
+                        <span class="badge popular">
+                            Popular
+                        </span>
+
+                        <img src="src/photo-1673121414328-52eff37bc6d0.avif" alt="Trek X">
+
+                    </div>
+
+                    <div class="bike-conteudo">
+
+                        <span class="categoria">
+                            MOUNTAIN BIKE
+                        </span>
+
+                        <h3>
+                            Trek X-Cal 29
+                        </h3>
+
+                        <p>
+                            Suspensão dianteira de 100mm, freios hidráulicos
+                            e câmbio Shimano. Pronta para trilhas e terrenos irregulares.
+                        </p>
+
+                        <div class="linha"></div>
+
+                        <div class="preco">
+
+                            <div>
+
+                                <span>A partir de</span>
+
+                                <strong>
+                                    R$ 45
+                                </strong>
+
+                                <small>/dia</small>
+
+                            </div>
+
+                            <span class="disponivel">
+                                ● Disponível
+                            </span>
+
+                        </div>
+
+                        <button
+                            onclick="window.location.href='reserva.html'"
+                            class="botao-alugar"
+                            data-bike="Trek X-Cal 29"
+                            data-preco="45"
+                            data-imagem="imagens/trek.jpg"
+                        >
+                            Alugue sua bike
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="bike-card">
+
+                    <div class="imagem-bike">
+
+                        <img src="src/photo-1591047139334-337807f2b3e5.avif" alt="City Classic">
+
+                    </div>
+
+                    <div class="bike-conteudo">
+
+                        <span class="categoria">
+                            BICICLETA URBANA
+                        </span>
+
+                        <h3>
+                            City Classic
+                        </h3>
+
+                        <p>
+                            Quadro leve de alumínio, guidão ergonômico
+                            e bagageiro traseiro. Perfeita para o dia a dia.
+                        </p>
+
+                        <div class="linha"></div>
+
+                        <div class="preco">
+
+                            <div>
+
+                                <span>A partir de</span>
+
+                                <strong>
+                                    R$ 28
+                                </strong>
+
+                                <small>/dia</small>
+
+                            </div>
+
+                            <span class="disponivel">
+                                ● Disponível
+                            </span>
+
+                        </div>
+
+                        <button
+                            onclick="window.location.href='reserva.html'"
+                            class="botao-alugar"
+                            data-bike="City Classic"
+                            data-preco="28"
+                            data-imagem="imagens/urban.jpg"
+                        >
+                            Alugue sua bike
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="bike-card">
+
+                    <div class="imagem-bike">
+
+                        <span class="badge nova">
+                            Nova
+                        </span>
+
+                        <img src="src/photo-1620802051782-725fa33db067.avif" alt="KBO E-Bike">
+
+                    </div>
+
+                    <div class="bike-conteudo">
+
+                        <span class="categoria">
+                            ELÉTRICA
+                        </span>
+
+                        <h3>
+                            E-Bike Breeze
+                        </h3>
+
+                        <p>
+                            Motor 500W com autonomia de até 40km por carga.
+                            Pedale com assistência elétrica sem esforço.
+                        </p>
+
+                        <div class="linha"></div>
+
+                        <div class="preco">
+
+                            <div>
+
+                                <span>A partir de</span>
+
+                                <strong>
+                                    R$ 75
+                                </strong>
+
+                                <small>/dia</small>
+
+                            </div>
+
+                            <span class="disponivel">
+                                ● Disponível
+                            </span>
+
+                        </div>
+
+                        <button
+                            onclick="window.location.href='reserva.html'"
+                            class="botao-alugar"
+                            data-bike="E-Bike Breeze"
+                            data-preco="75"
+                            data-imagem="imagens/eletrica.jpg"
+                        >
+                            Alugue sua bike
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="bike-card indisponivel-card">
+
+                    <div class="imagem-bike">
+
+                        <span class="badge indisponivel">
+                            Indisponível
+                        </span>
+
+                        <img src="src/photo-1499115026740-47ec7a0d026e.avif" alt="Veloz Road">
+
+                    </div>
+
+
+                    <div class="bike-conteudo">
+
+                        <span class="categoria">
+                            SPEED / ESTRADA
+                        </span>
+
+                        <h3>
+                            Speed Road 700c
+                        </h3>
+
+                        <p>
+                            Quadro de carbono leve, pneus 700x28
+                            e câmbio Shimano Tiagra. Ideal para longas distâncias.
+                        </p>
+
+                        <div class="linha"></div>
+
+
+                        <div class="preco">
+
+                            <div>
+
+                                <span>A partir de</span>
+
+                                <strong>
+                                    R$ 60
+                                </strong>
+
+                                <small>/dia</small>
+
+                            </div>
+
+                            <span class="texto-indisponivel">
+                                Indisponível
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="botao-indisponivel"
+                            disabled
+                        >
+                            Indisponível
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="cta">
+
+                <div>
+                    <h2>
+                        Pronto para pedalar?
+                    </h2>
+                    <p>
+                        Faça sua reserva agora e aproveite a liberdade sobre duas rodas.
+                    </p>
+                </div>
+
+
+                <a href="reserva.html" class="btn-cta">
+
+                    Alugue sua bike
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+            </div>
+
+
+        </section>
+
+</body>
+</html>

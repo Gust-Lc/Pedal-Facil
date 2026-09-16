@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar reserva - Pedal Fácil</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="cabecaralho">
+        <div class="logo">
+            <div class="logo-icone">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/>
+            <path d="M5.5 17.5l3-8 4 3 2.5-5H19l-3.5 3.5"/>
+          </svg>
+            </div>
+
+            <h1>Pedal <span>Fácil</span></h1>
+
+        </div>
+        <nav>
+            <a href="index.html" class="voltar">
+            ← Voltar
+            </a>
+        </nav>
+    </header>
+
+    <main class="pagina-reserva" id="paginaReserva">
+
+        <section class="reserva">
+
+            <span class="tag">
+                FORMULÁRIO DE RESERVA
+            </span>
+
+            <h1>
+                Finalize seu aluguel
+            </h1>
+
+
+            <div class="resumo-bike">
+
+                <div class="resumo-esquerda">
+
+                    <img id="imagemBike" src="src/photo-1673121414328-52eff37bc6d0.avif" alt="Bike escolhida">
+
+                    <div>
+
+                        <span class="categoria" id="categoriaBike">
+                            MOUNTAIN BIKE
+                        </span>
+
+                        <h3 id="nomeBike">
+                            Trek X-Cal 29
+                        </h3>
+
+                        <span id="valorPorDia">
+                            R$ 45,00 / dia
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="resumo-bike-total">
+
+                    <span>
+                        Valor estimado
+                    </span>
+
+                    <strong id="precoTotalTopo">
+                        R$ 45,00
+                    </strong>
+
+                </div>
+
+            </div>
+
+            <form id="formReserva" class="formulario">
+
+                <h4 class="titulo-secao">
+                    DADOS PESSOAIS
+                </h4>
+
+                <label class="campo">
+
+                    Nome completo *
+
+                    <input type="text" id="nome" placeholder="Ex.: Maria Silva" required>
+
+                </label>
+
+                <label class="campo">
+
+                    Telefone *
+
+                    <input type="tel" id="telefone" placeholder="(11) 99999-0000" required>
+
+                </label>
+
+                <h4 class="titulo-secao">
+                    ENDEREÇO COMPLETO
+                </h4>
+
+                <div class="campo-grupo">
+
+                    <label class="campo">
+
+                        CEP *
+
+                        <input type="text" placeholder="00000-000" required>
+
+                    </label>
+
+                    <label class="campo campo-maior">
+
+                        Logradouro *
+
+                        <input type="text" placeholder="Rua, Avenida, etc." required>
+
+                    </label>
+
+                </div>
+
+                <div class="campo-grupo-4">
+
+                    <label class="campo">
+
+                        Número *
+
+                        <input type="text" placeholder="123" required>
+
+                    </label>
+
+                    <label class="campo campo-bairro">
+
+                        Bairro *
+
+                        <input type="text" placeholder="Nome do bairro" required>
+
+                    </label>
+
+                    <label class="campo campo-cidade">
+
+                        Cidade *
+
+                        <input type="text" placeholder="São Paulo" required>
+
+                    </label>
+
+                    <label class="campo">
+
+                        UF *
+
+                        <input type="text" maxlength="2" placeholder="SP" required>
+
+                    </label>
+
+                </div>
+
+                <h4 class="titulo-secao">
+                    PERÍODO DE EMPRÉSTIMO
+                </h4>
+
+                <div class="campo-grupo-3">
+
+                    <label class="campo">
+
+                        Data da retirada *
+
+                        <input type="date" id="dataRetirada" required>
+
+                    </label>
+
+                    <label class="campo">
+
+                        Horário da retirada *
+
+                        <input type="time" id="horarioRetirada" required>
+
+                    </label>
+
+                    <label class="campo">
+
+                        Data da devolução *
+
+                        <input type="date" id="dataDevolucao" required>
+
+                    </label>
+
+                </div>
+
+                <div class="total">
+
+                    <div>
+
+                        <strong id="diasTexto" class="total-linha">
+                            1 dia x R$ 45,00
+                        </strong>
+
+                        <span class="total-obs">
+                            Pagamento na retirada
+                        </span>
+
+                    </div>
+
+                    <strong id="precoTotal" class="total-preco">
+                        R$ 45,00
+                    </strong>
+
+                </div>
+
+                <button type="submit" class="btn-confirmar">
+                    Confirmar reserva
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <section class="confirmacao" id="confirmacao">
+
+        <div class="icone-confirmacao">
+
+            <i class="fa-solid fa-check"></i>
+
+        </div>
+
+        <h1>
+            Reserva confirmada!
+        </h1>
+
+        <p>
+
+            Obrigado,
+
+            <strong id="nomeCliente">
+                Cliente
+            </strong>!
+
+            Sua reserva da
+
+            <strong id="bikeConfirmada">
+                bike
+            </strong>
+
+            foi recebida.
+
+        </p>
+
+        <a href="index.html" class="btn-voltar-catalogo">
+            Voltar ao catálogo
+
+        </a>
+
+    </section>
+
+</body>
+
+</html>

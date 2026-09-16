@@ -1,0 +1,234 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --green: #16a34a;
+  --green-dark: #15803d;
+  --green-light: #dcfce7;
+  --green-pale: #f0fdf4;
+  --slate-900: #0f172a;
+  --slate-700: #334155;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --white: #ffffff;
+  --bg: #f8fafc;
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); background: var(--bg); }
+h1 { font-family: var(--font-display); }
+nav { display: flex; gap: 35px; }
+nav a { color: var(--cinza); text-decoration: none; }
+a { display: flex; align-items: center; cursor: pointer; }
+button { cursor: pointer; }
+
+/* CABEÇALHO */
+.cabecaralho {
+    width: 100%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: var(--white);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.cabecaralho span { color: var(--green); }
+.logo { display: flex; align-items: center; gap: 15px; }
+.logo-icone {
+    width: 48px;
+    height: 48px;
+    color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+/* BOTÕES (cabeçalho + hero) */
+.btn-alugar a, .btn-baixao {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    font-family: var(--font-display);
+    transition: 0.2s;
+}
+.btn-alugar a:hover, .btn-baixao:hover { background-color: var(--green-dark); }
+
+/* HERO */
+.textinho {
+    padding: 60px 0 0 80px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.textinho-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+.textinho-texto h1 { font-size: 64px; }
+.verde { color: var(--green); }
+.locacao {
+    color: var(--green);
+    background: var(--green-light);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.textoae { font-size: 20px; color: var(--cinza); }
+
+.textinho-imagem { width: 50%; position: relative; }
+.textinho-imagem > img {
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 650px;
+    max-width: 650px;
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+}
+.reservas {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 230px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0,0,0,.12);
+}
+.reservas > span { font-size: 10px; color: #98a2b3; }
+.reservas_info { display: flex; align-items: center; gap: 12px; margin-top: 15px; font-size: 12px; }
+.check {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf7ef;
+    color: #198b4a;
+    border-radius: 50%;
+}
+
+.estatisticas { display: flex; gap: 50px; margin-top: 38px; }
+.estatisticas div { display: flex; flex-direction: column; gap: 8px; }
+.estatisticas strong { font-size: 15px; }
+.estatisticas span { font-size: 10px; letter-spacing: 1.5px; color: #687386; font-weight: 700; }
+
+/* COMO FUNCIONA */
+.como-funciona { padding: 75px 9%; background: var(--slate-200); }
+.como-funciona h2 { text-align: center; font-size: 25px; margin-bottom: 40px; }
+.passos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1000px; margin: auto; }
+.passo { position: relative; min-height: 170px; background: white; padding: 28px; border-radius: 20px; overflow: hidden; }
+.passo h3 { margin-top: 15px; font-size: 14px; }
+.passo p { margin-top: 12px; color: #687386; font-size: 12px; line-height: 1.6; }
+
+/* CATÁLOGO */
+.catalogo { max-width: 1200px; margin: auto; padding: 70px 30px; }
+.catalogo-topo { display: flex; justify-content: space-between; align-items: center; margin-bottom: 35px; }
+.catalogo h2 { font-size: 28px; }
+.modelos-texto { color: var(--slate-400); font-size: 11px; }
+.lista-bikes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+
+.bike-card { background: var(--white); border: 1px solid var(--slate-200); border-radius: 18px; overflow: hidden; transition: .25s; }
+.bike-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,.08); }
+.imagem-bike { height: 150px; position: relative; }
+.imagem-bike img { width: 100%; height: 100%; object-fit: cover; }
+.badge { position: absolute; top: 10px; left: 10px; z-index: 2; padding: 6px 9px; border-radius: 10px; color: var(--white); font-size: 9px; font-weight: 700; }
+.popular, .nova { background: var(--green); }
+.indisponivel { background: var(--slate-400); }
+
+.bike-conteudo { padding: 16px; }
+.categoria { color: var(--green); font-size: 9px; font-weight: 800; letter-spacing: 1px; }
+.bike-conteudo h3 { margin: 7px 0; font-size: 15px; }
+.bike-conteudo p { color: var(--slate-400); font-size: 10px; line-height: 1.7; min-height: 82px; }
+.linha { height: 1px; background: var(--slate-200); margin: 15px 0; }
+
+.preco { display: flex; justify-content: space-between; align-items: end; }
+.preco div { display: flex; align-items: baseline; gap: 4px; flex-wrap: wrap; }
+.preco div span { width: 100%; font-size: 9px; color: var(--slate-400); }
+.preco strong { font-size: 18px; }
+.preco small { color: var(--slate-400); font-size: 9px; }
+.disponivel { color: var(--green); font-size: 9px; }
+.texto-indisponivel { color: var(--slate-400); font-size: 9px; }
+
+.botao-alugar {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+.botao-alugar:hover { background: var(--green-dark); }
+.botao-indisponivel { width: 100%; margin-top: 18px; padding: 12px; border-radius: 10px; background: var(--slate-200); color: var(--slate-400); }
+
+.cta { margin-top: 30px; padding: 35px; border-radius: 22px; background: var(--green); color: var(--white); display: flex; align-items: center; justify-content: space-between; }
+.cta h2 { font-size: 24px; }
+.cta p { margin-top: 10px; font-size: 12px; opacity: .8; }
+.btn-cta { background: var(--white); color: var(--green); padding: 16px 25px; border-radius: 30px; font-size: 12px; font-weight: 700; }
+
+/* PÁGINA DE RESERVA */
+.pagina-reserva { margin-top: 20px; min-height: calc(100vh - 66px); padding: 60px 20px; }
+.reserva { max-width: 720px; margin: auto; }
+.reserva h1 { font-size: 30px; margin-bottom: 25px; }
+
+.resumo-bike { background: var(--white); border: 1px solid var(--slate-200); padding: 15px; border-radius: 15px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px; }
+.resumo-esquerda { display: flex; align-items: center; gap: 15px; }
+.resumo-esquerda img { width: 65px; height: 50px; border-radius: 8px; object-fit: cover; }
+.resumo-esquerda h3 { font-size: 15px; margin: 4px 0; }
+#valorPorDia { font-size: 10px; color: var(--slate-400); }
+.resumo-bike-total { text-align: right; display: flex; flex-direction: column; gap: 6px; }
+.resumo-bike-total span { font-size: 9px; color: var(--slate-400); }
+.resumo-bike-total strong { font-size: 20px; }
+
+/* FORMULÁRIO */
+.titulo-secao { margin: 25px 0 10px; font-size: 9px; letter-spacing: 1.5px; color: var(--slate-400); }
+.campo { display: flex; flex-direction: column; gap: 7px; font-size: 10px; font-weight: 700; color: var(--slate-400); margin-bottom: 12px; }
+input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 9px;
+    border: 1px solid var(--slate-200);
+    outline: none;
+    font-family: inherit;
+    color: #16243a;
+}
+input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(25,139,74,.1); }
+
+.campo-grupo { display: grid; grid-template-columns: 1fr 2fr; gap: 10px; }
+.campo-grupo-4 { display: grid; grid-template-columns: .6fr 1.2fr 1.4fr .5fr; gap: 10px; }
+.campo-grupo-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+/* TOTAL */
+.total { margin-top: 15px; padding: 18px; background: #eef8f1; border: 1px solid #bfe4cb; border-radius: 13px; display: flex; justify-content: space-between; align-items: center; }
+.total div { display: flex; flex-direction: column; gap: 5px; }
+.total-linha { font-size: 11px; color: var(--green); }
+.total-obs { font-size: 9px; color: var(--slate-400); }
+.total-preco { font-size: 22px; color: var(--green); }
+
+.btn-confirmar { width: 100%; margin-top: 15px; padding: 16px; background: var(--green); color: var(--white); border-radius: 9px; font-weight: 700; }
+
+/* CONFIRMAÇÃO */
+.confirmacao { display: none; min-height: calc(100vh - 66px); flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+.icone-confirmacao { width: 58px; height: 58px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--slate-100); color: var(--green); font-size: 22px; margin-bottom: 20px; }
+.confirmacao h1 { font-size: 28px; }
+.confirmacao p { max-width: 400px; margin: 12px 0 22px; font-size: 13px; color: var(--slate-400); line-height: 1.7; }
+.btn-voltar-catalogo { padding: 14px 25px; background: var(--green); color: var(--white); border-radius: 25px; font-size: 12px; font-weight: 700; }
