@@ -60,11 +60,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10%;
     background: var(--white);
     position: fixed;
     top: 0;
     z-index: 100;
+
 }
 
 .cabecaralho span {
@@ -108,6 +108,7 @@ button {
     align-items: center;
     justify-content: space-between;
     gap: 100px;
+    height: 100vh;
 }
 
 .textinho-texto {
@@ -144,6 +145,7 @@ button {
 .textinho-imagem {
     width: 50%;
     position: relative;
+    top: 85px;
 }
 
 .textinho-imagem > img {
@@ -391,6 +393,7 @@ button {
 .texto-indisponivel {
     color: var(--slate-400);
     font-size: 9px;
+    border: var(--slate-400);
 }
 
 .botao-alugar {
@@ -403,6 +406,7 @@ button {
     font-size: 11px;
     font-weight: 700;
     transition: 0.2s;
+    border: var(--green);
 }
 
 .botao-alugar:hover {
@@ -446,6 +450,7 @@ button {
     border-radius: 30px;
     font-size: 12px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .pagina-reserva {
